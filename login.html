@@ -18,22 +18,32 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
     <style>
-        .custom-card {
+        .login-container {
             max-width: 40rem;
             /* a rem is actually rem * 10px.*/
         }
 
-        .custom-card table {
+        .login-container table {
             height: 100%;
             width: 100%;
         }
 
-        .custom-card section {
+        .login-container section {
             height: 100%;
         }
+
+        .side-bar {
+            background: #d3d3d3;
+        }
+
+        .side-bar-td {
+            width: 35%;
+            height: 100%;
+        }
+
         .vertical-center {
             min-height: 100%;
-            min-height: 100vh; 
+            min-height: 100vh;
             display: flex;
             align-items: center;
         }
@@ -43,59 +53,60 @@
 
 <body class="bg-dark">
 
-<div class="jumbotron vertical-center">
-    <div class="container">
+    <div class="jumbotron vertical-center">
+        <div class="container">
 
-        <div class="card card-login mx-auto mt-5 custom-card">
-            <table>
-                <tr>
-                    <td style="width: 35%; height: 100%">
-                        <section style="background: #d8d8d8">Mathi</section>
-                    </td>
-                    <td>
-                        <section>
-                            <div class="card-header">Login</div>
-                            <div class="card-body">
+            <div class="card card-login mx-auto mt-5 login-container">
+                <table>
+                    <tr>
+                        <td class="side-bar-td">
+                            <section class='side-bar'></section>
+                        </td>
+                        <td>
+                            <section>
+                                <div class="card-header">Login</div>
+                                <div class="card-body">
 
-                                <form>
-                                    <div class="form-group">
-                                        <div class="form-label-group">
-                                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
-                                                required="required" autofocus="autofocus">
-                                            <label for="inputEmail">Email address</label>
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="form-label-group">
+                                                <input type="email" id="inputEmail" class="form-control"
+                                                    placeholder="Email address" required="required"
+                                                    autofocus="autofocus">
+                                                <label for="inputEmail">Email address</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="form-label-group">
-                                            <input type="password" id="inputPassword" class="form-control" placeholder="Password"
-                                                required="required">
-                                            <label for="inputPassword">Password</label>
+                                        <div class="form-group">
+                                            <div class="form-label-group">
+                                                <input type="password" id="inputPassword" class="form-control"
+                                                    placeholder="Password" required="required">
+                                                <label for="inputPassword">Password</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox" value="remember-me">
-                                                Remember Password
-                                            </label>
+                                        <div class="form-group">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="remember-me">
+                                                    Remember Password
+                                                </label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <a class="btn btn-primary btn-block" href="index.html">Login</a>
-                                </form>
+                                        <a class="btn btn-primary btn-block" href="index.html">Login</a>
+                                    </form>
 
-                                <div class="text-center">
-                                    <a class="d-block small mt-3" href="register.html">Register an Account</a>
-                                    <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+                                    <div class="text-center">
+                                        <a class="d-block small mt-3" href="register.html">Register an Account</a>
+                                        <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+                                    </div>
+
                                 </div>
+                            </section>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
-                            </div>
-                        </section>
-                    </td>
-                </tr>
-            </table>
         </div>
-
-    </div>
     </div>
 
 

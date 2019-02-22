@@ -17,6 +17,21 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+    <style>
+        .custom-card {
+            max-width: 40rem;
+            /* a rem is actually rem * 10px.*/
+        }
+
+        .custom-card table {
+            height: 100%;
+            width: 100%;
+        }
+
+        .custom-card section {
+            height: 100%;
+        }
+    </style>
 
 </head>
 
@@ -24,11 +39,11 @@
 
   <div class="container">
 
-    <div class="card card-login mx-auto mt-5">
+    <div class="card card-login mx-auto mt-5 custom-card">
       <table>
         <tr>
-          <td>
-      <section style="background: red">Mathi</section>
+          <td style="width: 35%; height: 100%">
+      <section style="background: #d8d8d8">Mathi</section>
     </td>
     <td><section>
       <div class="card-header">Login</div>
